@@ -1,0 +1,299 @@
+---
+---
+
+body, html {
+  height: 100%;
+  background-color: #fff;
+  color: #fff;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 2px;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0px;
+}
+
+li {
+  text-transform: uppercase;
+}
+
+p {
+  padding: 20px 20% 0;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  opacity: 1;
+}
+.more-info {
+  opacity: .7;
+  padding: 0 20%;
+  letter-spacing: 1px;
+
+}
+
+.fa.fa-home, .fa.fa-user {
+  font-size: 33px;
+}
+
+#content {
+  height: 100%;
+  width: 100%;
+  background-color: #0353A4;
+  background-image: url("/img/home-bkg-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.content-row {
+  height: 50%;
+  width: 100%;
+}
+
+.content-tile {
+  height: 100%;
+  width: 33%;
+  float: left;
+}
+
+#content-tile-1 {
+  height: 100%;
+  width: 33%;
+  float: left;
+  background-color: #006DAA;
+  border-radius: 0px 0px 150px 0px;
+  transition: background-color 3s ease;
+  -ms-transition: background-color 3s ease;
+  -moz-transition: background-color 3s ease;
+  opacity: .9;
+}
+
+#content-tile-1:hover {
+  background-color: #17BEBB;
+}
+
+#home-icon {
+  width: 78%;
+  height: 78%;
+  padding-left: 10%;
+  padding-top: 6%;
+  padding-right: 10%;
+}
+
+#home-icon img {
+  opacity: .7;
+}
+
+#home-icon img:hover {
+  opacity: 1;
+  transition: 1s;
+}
+
+.home-label {
+  padding: 1%;
+  text-align:center;
+}
+
+#content {
+  height: 100%;
+  width: 100%;
+  background-image: url("/img/home-bkg-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img-circle {
+    border-radius: 10%;
+    margin: 25px 0 0 20%;
+    max-width: 120px;
+    border: solid 5px rgba(255, 255, 255, 0.16);
+}
+
+/* Menu --------------------------------- */
+
+br { clear:left }
+
+.menu-simple {
+  width:45vh;
+  background: transparent;
+  color: rgba(255,255,255,.5);
+  position:fixed;
+  font-size: 25px;
+/*-webkit-transform-origin: left top;
+  -webkit-transform:rotate(-90deg) translateX(-100%);*/
+
+  ul {
+    margin: 0; padding: 0;
+    float: left;
+    position: fixed;
+
+    li {
+      display: block;
+      /*display: inline */
+
+      a {
+        float: left;
+        text-decoration: none;
+        color: rgba(255,255,255,.5);
+        padding: 10.5px 11px;
+      }
+
+      a:hover, .current {
+        color: #fff;
+        transition: 1s;
+          -ms-transition: 1s;
+          -moz-transition: 1s;
+      }
+    }
+  }
+}
+
+
+
+/* Flipping Design Women Images -------------*/
+
+#f1_container {
+  position: relative;
+  margin: 10px auto;
+  width: 200px;
+  height: 276px;
+  z-index: 1;
+}
+#f1_container {
+  perspective: 1000;
+}
+#f1_card {
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+}
+#f1_container:hover #f1_card {
+  transform: rotateY(180deg);
+}
+.face {
+  position: absolute;
+  backface-visibility: hidden;
+}
+.face.back {
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Nav button ---------------------- */
+
+.button {
+  float:right;
+  padding-top: 200px;
+  padding-right: 50px;
+}
+
+.arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  display: inline-block;
+  border-left: 20px solid rgba(255,255,255,.5);
+  vertical-align: top;
+  margin-top: 31px;
+}
+
+.arrow-right:hover {
+  border-left: 20px solid rgba(255,255,255,.8);
+}
+
+.arrow-left {
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  display: inline-block;
+  border-right: 20px solid rgba(255,255,255,.5);
+  vertical-align: top;
+  margin-top: 31px;
+}
+
+.arrow-left:hover {
+  border-right: 20px solid rgba(255,255,255,.8);
+}
+
+/* Web Hover Scroll and Background -------------------*/
+
+.picture-container {
+  width: 70%;
+  height: 70%;
+  max-width: 300px;
+  min-width: 300px;
+  max-height: 230px;
+  min-height: 230px;
+  overflow: hidden;
+  border: solid 10px rgba(255,255,255,.5);
+  border-top-width: 30px;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 10px;
+
+  img {
+      transform: translate3d(0px, 0px, 0px);
+      transition: transform 3s ease-in-out;
+
+  }
+
+  img:hover {
+      transform: translate3d(0px, -292px, 0px);
+  }
+}
+
+#three-circles {
+  position: absolute;
+  margin-top: -25px;
+  margin-left: 0%;
+}
+
+/* Signage Icon -------------------*/
+
+.signage-icon {
+  width: 60%;
+  height: 60%;
+  max-width: 250px;
+  min-width: 250px;
+  max-height: 160px;
+  min-height: 160px;
+  overflow: hidden;
+  background-color: rgba(255,255,255,.5);
+  color: rgba(255,255,255,.5);
+  border: solid 10px rgba(255,255,255,.5);
+  border-radius: 5px;
+  margin-top: 50px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 10px;
+}
+
+
+@media (max-width: 900px) {
+
+#content {
+    background-image: none;
+    background-color: #000;
+}
+
+.content-tile {
+    height: 500px;
+    width: 100%;
+}
+
+#content-tile-1 {
+    height: 350px;
+    width: 100%;
+    border-radius: 0px;
+}
+
+}
