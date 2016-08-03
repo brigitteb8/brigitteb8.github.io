@@ -3,7 +3,6 @@
 
 body, html {
   height: 100%;
-  background-color: #fff;
   color: #fff;
   font-size: 16px;
   line-height: 22px;
@@ -138,6 +137,9 @@ br { clear:left }
         text-decoration: none;
         color: rgba(255,255,255,.5);
         padding: 10.5px 11px;
+        transition: 1s;
+          -ms-transition: 1s;
+          -moz-transition: 1s;
       }
 
       a:hover, .current {
