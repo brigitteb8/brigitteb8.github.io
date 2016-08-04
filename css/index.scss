@@ -330,6 +330,42 @@ br { clear:left }
     -moz-transition: 1s;
 }
 
+
+/* Explore Icon Small-------------------*/
+
+.explore-icon-container-small {
+  width: 93px;
+  height: 60px;
+  overflow: hidden;
+  display: inline-block;
+  margin: auto;
+  padding-top: 20px;
+  transition: 2s;
+    -ms-transition: 2s;
+    -moz-transition: 2s;
+}
+
+#explore-icon-box-small {
+  height: 15px;
+  width: 15px;
+  background-color: rgba(255,255,255,.3);
+  border: solid 4px rgba(255,255,255,.3);
+  border-radius: 2px;
+  float: left;
+  right: 4px;
+  margin: 4px;
+  transition: 1s;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+}
+
+#explore-icon-box-small:hover {
+  background-color: rgba(255,255,255,.7);
+  transition: 1s;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+}
+
 /* Branding Icon -------------------*/
 
 .branding-icon {
