@@ -80,25 +80,32 @@ img {
 }
 
 #home-icon {
-  width: 78%;
-  height: 78%;
-  padding-left: 10%;
-  padding-top: 6%;
-  padding-right: 10%;
-}
+  width: 220px;
+  height: 220px;
+  padding-top: 53px;
+  margin: auto;
+  display: block;
 
-#home-icon img {
-  opacity: .7;
-}
+  img {
+    opacity: .7;
+    transition: 1s;
+  }
 
-#home-icon img:hover {
-  opacity: 1;
-  transition: 1s;
+  img:hover {
+    opacity: 1;
+    transition: 1s;
+  }
 }
 
 .home-label {
-  padding: 1%;
+  padding: 10px;
   text-align:center;
+  transition: 1s;
+}
+
+.home-label:hover {
+  opacity: .6;
+  transition: 1s;
 }
 
 .img-circle {
@@ -424,17 +431,12 @@ br { clear:left }
 }
 
 
-@media (max-width: 900px) {
-
-#content {
-    background-image: none;
-    background-color: #003862;
-}
+@media (max-width: 940px) {
 
 .content-tile {
     height: 300px;
     width: 100%;
-    background-color: #006198;
+    background-color: #003862;
 }
 
 #content-tile-1 {
