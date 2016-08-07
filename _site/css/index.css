@@ -1,6 +1,5 @@
 body, html {
   height: 100%;
-  background-color: #fff;
   color: #fff;
   font-size: 16px;
   line-height: 22px;
@@ -12,13 +11,17 @@ li {
   text-transform: uppercase; }
 
 p {
-  padding: 20px 20% 0; }
+  padding: 18px 20% 0; }
 
 a {
   text-decoration: none;
   font-weight: bold;
   color: #fff;
   opacity: 1; }
+
+img {
+  margin: auto;
+  display: block; }
 
 .more-info {
   opacity: .7;
@@ -31,9 +34,10 @@ a {
 #content {
   height: 100%;
   width: 100%;
-  background-color: #0353A4;
-  background-image: url("/img/home-bkg-2.jpg");
-  background-size: cover;
+  min-height: 600px;
+  background-image: url("/img/plant-bkg-3.jpg");
+  background-position: bottom right;
+  background-color: #003862;
   background-repeat: no-repeat; }
 
 .content-row {
@@ -46,11 +50,11 @@ a {
   float: left; }
 
 #content-tile-1 {
-  height: 100%;
+  height: 90%;
   width: 33%;
   float: left;
-  background-color: #006DAA;
-  border-radius: 0px 0px 150px 0px;
+  background-color: rgba(1, 105, 166, 0.7);
+  border-radius: 0px 0px 80px 0px;
   transition: background-color 3s ease;
   -ms-transition: background-color 3s ease;
   -moz-transition: background-color 3s ease;
@@ -60,29 +64,26 @@ a {
   background-color: #17BEBB; }
 
 #home-icon {
-  width: 78%;
-  height: 78%;
-  padding-left: 10%;
-  padding-top: 6%;
-  padding-right: 10%; }
-
-#home-icon img {
-  opacity: .7; }
-
-#home-icon img:hover {
-  opacity: 1;
-  transition: 1s; }
+  width: 220px;
+  height: 220px;
+  padding-top: 53px;
+  margin: auto;
+  display: block; }
+  #home-icon img {
+    opacity: .7;
+    transition: 1s; }
+  #home-icon img:hover {
+    opacity: 1;
+    transition: 1s; }
 
 .home-label {
-  padding: 1%;
-  text-align: center; }
+  padding: 10px;
+  text-align: center;
+  transition: 1s; }
 
-#content {
-  height: 100%;
-  width: 100%;
-  background-image: url("/img/home-bkg-1.jpg");
-  background-size: cover;
-  background-repeat: no-repeat; }
+.home-label:hover {
+  opacity: .6;
+  transition: 1s; }
 
 .img-circle {
   border-radius: 10%;
@@ -114,7 +115,10 @@ br {
         float: left;
         text-decoration: none;
         color: rgba(255, 255, 255, 0.5);
-        padding: 10.5px 11px; }
+        padding: 10.5px 11px;
+        transition: 1s;
+        -ms-transition: 1s;
+        -moz-transition: 1s; }
       .menu-simple ul li a:hover, .menu-simple ul li .current {
         color: #fff;
         transition: 1s;
@@ -152,6 +156,28 @@ br {
   box-sizing: border-box;
   text-align: center; }
 
+/* Flipping Business Cards -------------*/
+#f2_container {
+  position: relative;
+  margin: 20px auto;
+  display: block;
+  width: 300px;
+  height: 195px;
+  z-index: 1; }
+
+#f2_container {
+  perspective: 1000; }
+
+#f2_card {
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  transform-style: preserve-3d;
+  transition: all 1.0s linear; }
+
+#f2_container:hover #f2_card {
+  transform: rotateY(180deg); }
+
 /* Nav button ---------------------- */
 .button {
   float: right;
@@ -166,10 +192,16 @@ br {
   display: inline-block;
   border-left: 20px solid rgba(255, 255, 255, 0.5);
   vertical-align: top;
-  margin-top: 31px; }
+  margin-top: 31px;
+  transition: 1s;
+  -ms-transition: 1s;
+  -moz-transition: 1s; }
 
 .arrow-right:hover {
-  border-left: 20px solid rgba(255, 255, 255, 0.8); }
+  border-left: 20px solid rgba(255, 255, 255, 0.8);
+  transition: 1s;
+  -ms-transition: 1s;
+  -moz-transition: 1s; }
 
 .arrow-left {
   width: 0;
@@ -179,26 +211,30 @@ br {
   display: inline-block;
   border-right: 20px solid rgba(255, 255, 255, 0.5);
   vertical-align: top;
-  margin-top: 31px; }
+  margin-top: 31px;
+  transition: 1s;
+  -ms-transition: 1s;
+  -moz-transition: 1s; }
 
 .arrow-left:hover {
-  border-right: 20px solid rgba(255, 255, 255, 0.8); }
+  border-right: 20px solid rgba(255, 255, 255, 0.8);
+  transition: 1s;
+  -ms-transition: 1s;
+  -moz-transition: 1s; }
 
 /* Web Hover Scroll and Background -------------------*/
 .picture-container {
-  width: 70%;
-  height: 70%;
   max-width: 300px;
   min-width: 300px;
-  max-height: 230px;
-  min-height: 230px;
+  max-height: 160px;
+  min-height: 160px;
+  display: block;
+  margin: auto;
   overflow: hidden;
-  border: solid 10px rgba(255, 255, 255, 0.5);
+  border: solid 10px rgba(255, 255, 255, 0.6);
   border-top-width: 30px;
   border-radius: 5px;
-  margin-top: 30px;
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-top: 60px;
   margin-bottom: 10px; }
   .picture-container img {
     transform: translate3d(0px, 0px, 0px);
@@ -213,30 +249,124 @@ br {
 
 /* Signage Icon -------------------*/
 .signage-icon {
-  width: 60%;
-  height: 60%;
+  width: 300px;
+  height: 140px;
   max-width: 250px;
   min-width: 250px;
   max-height: 160px;
   min-height: 160px;
   overflow: hidden;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.3);
   color: rgba(255, 255, 255, 0.5);
-  border: solid 10px rgba(255, 255, 255, 0.5);
+  border: solid 10px rgba(255, 255, 255, 0.3);
   border-radius: 5px;
+  display: block;
+  margin: auto;
   margin-top: 50px;
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  transition: 2s;
+  -ms-transition: 2s;
+  -moz-transition: 2s; }
 
-@media (max-width: 900px) {
-  #content {
-    background-image: none;
-    background-color: #000; }
+.signage-icon:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: solid 10px rgba(255, 255, 255, 0.6);
+  transition: 1s;
+  -ms-transition: 1s;
+  -moz-transition: 1s; }
 
+/* Explore Icon -------------------*/
+.explore-icon-container {
+  width: 230px;
+  max-width: 250px;
+  height: 140px;
+  overflow: hidden;
+  display: block;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  padding: 20px 0px;
+  transition: 2s;
+  -ms-transition: 2s;
+  -moz-transition: 2s; }
+
+#explore-icon-box {
+  height: 35px;
+  width: 35px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: solid 10px rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  float: left;
+  right: 10px;
+  margin: 10px;
+  transition: 1s;
+  -ms-transition: 1s;
+  -moz-transition: 1s; }
+
+#explore-icon-box:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: solid 10px rgba(255, 255, 255, 0.7);
+  transition: 1s;
+  -ms-transition: 1s;
+  -moz-transition: 1s; }
+
+/* Explore Icon Small-------------------*/
+.explore-icon-container-small {
+  width: 93px;
+  height: 60px;
+  overflow: hidden;
+  display: inline-block;
+  margin: auto;
+  padding-top: 20px;
+  transition: 2s;
+  -ms-transition: 2s;
+  -moz-transition: 2s; }
+
+#explore-icon-box-small {
+  height: 15px;
+  width: 15px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: solid 4px rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+  float: left;
+  right: 4px;
+  margin: 4px;
+  transition: 1s;
+  -ms-transition: 1s;
+  -moz-transition: 1s; }
+
+#explore-icon-box-small:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  transition: 1s;
+  -ms-transition: 1s;
+  -moz-transition: 1s; }
+
+/* Branding Icon -------------------*/
+.branding-icon {
+  width: 120px;
+  height: 120px;
+  display: block;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  padding: 30px;
+  transition: 2s;
+  -ms-transition: 2s;
+  -moz-transition: 2s; }
+
+.branding-icon:hover {
+  background-color: rgba(255, 132, 48, 0.7);
+  transition: 2s;
+  -ms-transition: 2s;
+  -moz-transition: 2s; }
+
+@media (max-width: 940px) {
   .content-tile {
-    height: 500px;
-    width: 100%; }
+    height: 300px;
+    width: 100%;
+    background-color: #003862; }
 
   #content-tile-1 {
     height: 350px;
