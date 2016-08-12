@@ -125,6 +125,7 @@ br { clear:left }
   color: rgba(255,255,255,.5);
   position:fixed;
   font-size: 25px;
+  z-index: 1;
 /*-webkit-transform-origin: left top;
   -webkit-transform:rotate(-90deg) translateX(-100%);*/
 
@@ -259,16 +260,14 @@ br { clear:left }
   vertical-align: top;
   margin-top: 31px;
   transition: 1s;
-    -ms-transition: 1s;
-    -moz-transition: 1s;
+
+  &:hover {
+    border-left: 20px solid rgba(255,255,255,.8);
+    transition: 1s;
+  }
 }
 
-.arrow-right:hover {
-  border-left: 20px solid rgba(255,255,255,.8);
-  transition: 1s;
-    -ms-transition: 1s;
-    -moz-transition: 1s;
-}
+
 
 .arrow-left {
   width: 0;
@@ -280,16 +279,13 @@ br { clear:left }
   vertical-align: top;
   margin-top: 31px;
   transition: 1s;
-    -ms-transition: 1s;
-    -moz-transition: 1s;
+
+  .arrow-left:hover {
+    border-right: 20px solid rgba(255,255,255,.8);
+    transition: 1s;
+  }
 }
 
-.arrow-left:hover {
-  border-right: 20px solid rgba(255,255,255,.8);
-  transition: 1s;
-    -ms-transition: 1s;
-    -moz-transition: 1s;
-}
 
 /* Web Hover Scroll and Background -------------------*/
 
@@ -308,14 +304,14 @@ br { clear:left }
   margin-bottom: 10px;
 
   img {
-      transform: translate3d(0px, 0px, 0px);
-      transition: transform 3s ease-in-out;
+    transform: translate3d(0px, 0px, 0px);
+    transition: transform 3s ease-in-out;
 
-  }
-
-  img:hover {
+    &:hover {
       transform: translate3d(0px, -292px, 0px);
+    }
   }
+
 }
 
 #three-circles {
@@ -343,17 +339,14 @@ br { clear:left }
   margin-top: 50px;
   margin-bottom: 10px;
   transition: 2s;
-    -ms-transition: 2s;
-    -moz-transition: 2s;
+
+  &:hover {
+    background-color: rgba(255,255,255,.5);
+    border: solid 10px rgba(255,255,255,.6);
+    transition: 1s;
+    }
 }
 
-.signage-icon:hover {
-  background-color: rgba(255,255,255,.5);
-  border: solid 10px rgba(255,255,255,.6);
-  transition: 1s;
-    -ms-transition: 1s;
-    -moz-transition: 1s;
-}
 
 /* Explore Icon -------------------*/
 
@@ -384,14 +377,12 @@ br { clear:left }
   transition: 1s;
     -ms-transition: 1s;
     -moz-transition: 1s;
-}
 
-#explore-icon-box:hover {
-  background-color: rgba(255,255,255,.5);
-  border: solid 10px rgba(255,255,255,.7);
-  transition: 1s;
-    -ms-transition: 1s;
-    -moz-transition: 1s;
+  &:hover {
+    background-color: rgba(255,255,255,.5);
+    border: solid 10px rgba(255,255,255,.7);
+    transition: 1s;
+    }
 }
 
 
@@ -419,16 +410,13 @@ br { clear:left }
   right: 4px;
   margin: 4px;
   transition: 1s;
-    -ms-transition: 1s;
-    -moz-transition: 1s;
+
+    &:hover {
+    background-color: rgba(255,255,255,.7);
+    transition: 1s;
+    }
 }
 
-#explore-icon-box-small:hover {
-  background-color: rgba(255,255,255,.7);
-  transition: 1s;
-    -ms-transition: 1s;
-    -moz-transition: 1s;
-}
 
 /* Branding Icon -------------------*/
 
@@ -443,15 +431,11 @@ br { clear:left }
   border-radius: 50%;
   padding: 30px;
   transition: 2s;
-    -ms-transition: 2s;
-    -moz-transition: 2s;
-}
 
-.branding-icon:hover {
-  background-color: rgba(255,132,48,0.7);
-  transition: 2s;
-    -ms-transition: 2s;
-    -moz-transition: 2s;
+  &:hover {
+    background-color: rgba(255,132,48,0.7);
+    transition: 2s;
+    }
 }
 
 
