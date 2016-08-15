@@ -245,24 +245,23 @@ br { clear:left }
 /* Nav button ---------------------- */
 
 .button {
-  float:right;
-  padding-top: 200px;
-  padding-right: 50px;
+  padding: 100px 50px 10px;
 }
 
 .arrow-right {
+  float:right;
   width: 0;
   height: 0;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
   display: inline-block;
-  border-left: 20px solid rgba(255,255,255,.5);
+  border-left: 30px solid rgba(255,255,255,.5);
   vertical-align: top;
   margin-top: 31px;
   transition: 1s;
 
   &:hover {
-    border-left: 20px solid rgba(255,255,255,.8);
+    border-left: 35px solid rgba(255,255,255,.8);
     transition: 1s;
   }
 }
@@ -270,18 +269,19 @@ br { clear:left }
 
 
 .arrow-left {
+  float:left;
   width: 0;
   height: 0;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
   display: inline-block;
-  border-right: 20px solid rgba(255,255,255,.5);
+  border-right: 30px solid rgba(255,255,255,.5);
   vertical-align: top;
   margin-top: 31px;
   transition: 1s;
 
-  .arrow-left:hover {
-    border-right: 20px solid rgba(255,255,255,.8);
+  &:hover {
+    border-right: 35px solid rgba(255,255,255,.8);
     transition: 1s;
   }
 }
@@ -451,6 +451,10 @@ br { clear:left }
     height: 350px;
     width: 100%;
     border-radius: 0px;
+}
+
+.button {
+    display: none;
 }
 
 }
