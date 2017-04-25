@@ -519,9 +519,10 @@ br { clear:left }
 }
 
 #content-tile-1 {
-    height: 350px;
-    width: 100%;
-    border-radius: 0px;
+  height: 380px;
+  width: 100%;
+  border-radius: 0px;
+  position: initial;
 }
 
 .button {
@@ -531,6 +532,10 @@ br { clear:left }
 .button-mobile {
     display: block;
     padding: 0px 50px;
-  }
+}
+
+.home-label {
+  display: none;
+}
 
 }
