@@ -9,6 +9,7 @@ body, html {
   letter-spacing: 2px;
   font-family: 'Source Sans Pro', sans-serif;
   margin: 0px;
+  background-color: #003862;
 }
 
 li {
@@ -29,6 +30,7 @@ a {
 img {
   margin: auto;
   display: block;
+  max-width: 100%;
 }
 
 .more-info {
@@ -45,30 +47,61 @@ img {
 #content {
   height: 100%;
   width: 100%;
-  min-height: 780px;
+  min-height: 100vh;
   background-image: url('/img/plant-bkg-3.jpg');
   background-position: bottom right;
   background-color: #003862;
   background-repeat: no-repeat;
 }
 
-.content-row {
-  height: 50%;
+.container-tile-right {
+  position: relative;
+  height: auto;
+  width: 69%;
+  float: right;
+  margin-bottom: 10px;
+}
+
+.menu-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.menu-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 56, 98, .7);
+  overflow: hidden;
+  width: 0;
+  height:  100%;
+  transition: .5s ease;
+}
+
+.container-tile-right:hover .menu-overlay {
   width: 100%;
 }
 
-.content-tile {
-  height: 100%;
-  width: 33%;
-  float: left;
+.menu-text {
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 #content-tile-1 {
-  height: 90%;
-  width: 33%;
+  height: 100%;
+  position: fixed;
+  width: 30%;
   float: left;
   background-color: rgba(1,105,166,.7);
-  border-radius: 0px 0px 80px 0px;
   transition: background-color 3s ease;
   -ms-transition: background-color 3s ease;
   -moz-transition: background-color 3s ease;
@@ -158,7 +191,29 @@ br { clear:left }
   }
 }
 
+/* Homepage Dropdown Menu */
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    transition: 1s;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: none;
+    width: 100%;
+    padding: 10px;
+    z-index: 1;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    width: 100%;
+}
 
 /* Flipping Design Women Images -------------*/
 
@@ -448,6 +503,19 @@ br { clear:left }
     height: 300px;
     width: 100%;
     background-color: #003862;
+}
+
+.container-tile-right {
+    width: 100%;
+    float: none;
+}
+
+.menu-simple {
+    width: 60px;
+    background: #01578d;
+    height: 100vh;
+    color: #fff;
+    opacity: none;
 }
 
 #content-tile-1 {
