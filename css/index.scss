@@ -522,7 +522,7 @@ br { clear:left }
   height: 380px;
   width: 100%;
   border-radius: 0px;
-  position: initial;
+  position: inherit;
 }
 
 .button {
@@ -532,10 +532,6 @@ br { clear:left }
 .button-mobile {
     display: block;
     padding: 0px 50px;
-}
-
-.home-label {
-  display: none;
 }
 
 }
