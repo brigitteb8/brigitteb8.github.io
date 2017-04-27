@@ -511,9 +511,10 @@ br { clear:left }
 .menu-simple {
     width: 60px;
     background: #01578d;
-    height: 100vh;
+    height: 100%;
     color: #fff;
     opacity: none;
+    position: fixed;
 }
 
 #content-tile-1 {
