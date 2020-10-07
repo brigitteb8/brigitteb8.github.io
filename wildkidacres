@@ -1,0 +1,82 @@
+---
+---
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="keywords" content="Brigitte, Brigitte Baker, Graphic Design">
+    <meta name="description" content="Brigitte">
+    <meta name="author" content="Brigitte">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <title>Brigitte</title>
+
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <script src="https://use.fontawesome.com/a20eaadde5.js"></script>
+  </head>
+
+  <body>
+    <div id="content">
+      <div class="content-row">
+        <div id="content-tile-1">
+          <div class="menu-simple">
+            <ul>
+              <li><a href=".."><i class="fa fa-home" aria-hidden="true"></i></a></li>
+              <li><a href="/bio"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+              <li><a href="mailto:me@brigittebaker.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+            </ul>
+            <br />
+          </div>
+          <p>WILD KID ACRES</p>
+          <div class="more-info">A local, small family-run farm.
+          </div>
+        </div>
+
+        <div class="content-tile">
+          <div class="picture-container">
+            <div id="three-circles">
+              <svg height="12" width="12">
+                <circle cx="6" cy="6" r="5" stroke="#8c171e" stroke-width="1" fill="#f7323f" />
+              </svg>
+              <svg height="12" width="12">
+                <circle cx="6" cy="6" r="5" stroke="#916f01" stroke-width="1" fill="#fdc010" />
+              </svg>
+              <svg height="12" width="12">
+                <circle cx="6" cy="6" r="5" stroke="#00652c" stroke-width="1" fill="#00a651" />
+              </svg>
+            </div>
+              <img src="/img/wildkid.jpg">
+          </div>
+        </div>
+
+        <div class="content-tile">
+          <img src="img/bluewater-email.jpg" width="230px" height="263px" style="margin-top: 25px; border-radius: 10px; border: #afb5c5 1px solid;">
+        </div>
+      </div>
+
+      <div class="content-row">
+        <div class="content-tile">
+          <div class="button">
+            <a href="/andysterns"><div class="arrow-left"></div></a>
+          </div>
+          <div class="button-mobile">
+            <a href="/andysterns"><div class="arrow-left"></div></a>
+            <a href="/contemporaries"><div class="arrow-right"></div></a>
+          </div>
+        </div>
+
+        <div class="content-tile">
+        </div>
+
+        <div class="content-tile">
+          <div class="button">
+            <a href="/contemporaries"><div class="arrow-right"></div></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
